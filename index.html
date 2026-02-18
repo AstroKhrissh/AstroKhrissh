@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Hygiene Initiative – Home</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes slideUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    
+    .fade-in { animation: fadeIn 0.5s ease-out forwards; }
+    .slide-in-up { animation: slideUp 0.6s ease-out forwards; }
+    .slide-in-down { animation: slideDown 0.4s ease-out forwards; }
+    
+    .interactive-btn { transition: all 0.3s ease; }
+    .interactive-btn:hover { transform: translateY(-2px); }
+    .interactive-btn:active { transform: translateY(0); }
+    
+    .card-elevated { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.06); transition: all 0.3s ease; }
+    .card-elevated:hover { box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04); transform: translateY(-4px); }
+    
+    .section-header { position: relative; display: inline-block; padding-bottom: 12px; }
+    .section-header::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, #1e40af, #3b82f6, transparent); border-radius: 2px; }
+    
+    .sticky-nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.95); }
+    
+    html, body { height: 100%; margin: 0; }
+    
+    @media (max-width: 768px) {
+      .nav-menu { gap: 0.5rem; }
+      .feature-grid { grid-template-columns: 1fr !important; }
+      .section-header::after { width: 40px; }
+    }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full bg-slate-50 scroll-smooth">
+  <div id="app" class="w-full h-full overflow-auto"><!-- Sticky Navigation -->
+   <nav class="sticky-nav border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-4">
+     <div class="flex items-center justify-between"><a href="/" class="flex items-center gap-3 hover:opacity-80 transition">
+       <div class="w-11 h-11 rounded-lg bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center shadow-lg">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+       </div>
+       <div>
+        <h1 class="text-lg font-bold text-slate-900">Cyber Hygiene Initiative</h1>
+        <p class="text-xs text-slate-500">Digital Safety for India</p>
+       </div></a>
+      <div class="flex items-center gap-6 md:gap-8"><a href="/" class="text-sm font-bold text-blue-600 hover:text-blue-700 transition pb-1">Home</a> <a href="/learn.html" class="text-sm text-slate-700 hover:text-blue-600 transition pb-1">Learn</a> <a href="/assessment.html" class="text-sm text-slate-700 hover:text-blue-600 transition pb-1">Self-Assessment</a> <a href="/government.html" class="text-sm text-slate-700 hover:text-blue-600 transition pb-1">Government</a> <a href="/report.html" class="text-sm text-slate-700 hover:text-blue-600 transition pb-1">Report</a> <a href="/resources.html" class="text-sm text-slate-700 hover:text-blue-600 transition pb-1">Resources</a>
+      </div>
+     </div>
+    </div>
+   </nav><!-- Latest Advisory Banner -->
+   <div class="bg-gradient-to-r from-red-600 to-orange-600 text-white px-4 py-3 text-center text-sm font-bold shadow-lg">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-3"><span class="animate-pulse text-lg">⚠️</span> <span>Advisory: Beware of OTP Phishing Scams – Never Share Your OTP or UPI PIN with Anyone</span> <span class="animate-pulse text-lg">⚠️</span>
+    </div>
+   </div><!-- Hero Section -->
+   <section class="py-20 px-4 bg-gradient-to-br from-blue-50 via-white to-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto">
+     <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="slide-in-up">
+       <div class="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 rounded-full text-orange-700 text-xs font-semibold mb-6 border border-orange-200">
+        🇮🇳 India's Digital Safety Initiative
+       </div>
+       <h1 class="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">Protect Your Digital Life Today</h1>
+       <p class="text-lg text-slate-700 mb-6"><strong>Cyber crime in India increased 63% year-over-year.</strong> From banking fraud to identity theft, threats are accelerating. Take action now—secure your accounts, recognize scams, and protect your family.</p>
+       <p class="text-slate-600 mb-8 leading-relaxed max-w-2xl">Our mission: Build cyber awareness across India with accessible, practical guidance. This initiative aligns with national cyber security efforts led by CERT-In and MeitY, reflecting global best practices in digital safety education.</p>
+       <div class="flex flex-col sm:flex-row gap-4"><a href="/learn.html" class="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold rounded-xl hover:from-blue-700 hover:to-blue-800 transition transform hover:scale-105 shadow-lg interactive-btn inline-block text-center text-lg"> Start Learning Now → </a> <a href="/report.html" class="px-8 py-4 border-2 border-red-600 text-red-600 font-bold rounded-xl hover:bg-red-50 transition interactive-btn inline-block text-center text-lg"> ⚠️ Report Incident </a>
+       </div>
+      </div>
+      <div class="slide-in-down hidden md:block">
+       <div class="relative">
+        <div class="w-full h-80 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl shadow-2xl opacity-10"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+         <svg class="w-40 h-40 text-blue-600 opacity-20" fill="currentColor" viewbox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
+         </svg>
+        </div>
+       </div>
+      </div>
+     </div><!-- Feature Cards -->
+     <div class="grid md:grid-cols-4 gap-6 mt-16 feature-grid"><a href="/learn.html" class="feature-card card-elevated bg-white rounded-xl p-6 border border-slate-200 cursor-pointer group hover:border-blue-300">
+       <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-200 transition"><span class="text-2xl">📚</span>
+       </div><h3 class="font-bold text-slate-900 mb-2">Learn &amp; Explore</h3><p class="text-sm text-slate-600">Guides on passwords, phishing, device security, and privacy protection.</p></a> <a href="/assessment.html" class="feature-card card-elevated bg-white rounded-xl p-6 border border-slate-200 cursor-pointer group hover:border-green-300">
+       <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-green-200 transition"><span class="text-2xl">🎯</span>
+       </div><h3 class="font-bold text-slate-900 mb-2">Self-Assessment</h3><p class="text-sm text-slate-600">Get your Cyber Safety Score and personalized security recommendations.</p></a> <a href="/government.html" class="feature-card card-elevated bg-white rounded-xl p-6 border border-slate-200 cursor-pointer group hover:border-orange-300">
+       <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-orange-200 transition"><span class="text-2xl">🏛️</span>
+       </div><h3 class="font-bold text-slate-900 mb-2">Government Resources</h3><p class="text-sm text-slate-600">Connect with CERT-In, Cyber Swachhta Kendra, and official reporting channels.</p></a> <a href="/report.html" class="feature-card card-elevated bg-white rounded-xl p-6 border border-red-200 cursor-pointer group hover:border-red-400 bg-red-50">
+       <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-red-200 transition"><span class="text-2xl">⚠️</span>
+       </div><h3 class="font-bold text-red-900 mb-2">Report Incident</h3><p class="text-sm text-red-800">Safely report cyber crimes and scams to protect the community.</p></a>
+     </div>
+    </div>
+   </section><!-- About This Initiative -->
+   <section class="py-20 px-4 bg-white border-b border-slate-200">
+    <div class="max-w-4xl mx-auto slide-in-up">
+     <div class="section-header mb-12">
+      <h2 class="text-4xl font-bold text-slate-900">About This Initiative</h2>
+     </div>
+     <div class="grid md:grid-cols-2 gap-12">
+      <div>
+       <h3 class="text-2xl font-bold text-slate-900 mb-4">Our Mission</h3>
+       <p class="text-slate-700 leading-relaxed mb-4">Empower Indian digital citizens with practical knowledge to protect themselves against cyber threats. We make complex security concepts simple and actionable.</p>
+       <p class="text-slate-700 leading-relaxed">Aligned with CERT-In and MeitY initiatives, this portal reflects global best practices in digital safety education—accessible, non-technical, and focused on real-world protection.</p>
+      </div>
+      <div>
+       <h3 class="text-2xl font-bold text-slate-900 mb-4">Institutional Framework</h3>
+       <p class="text-slate-700 leading-relaxed mb-4">This initiative coordinates with India's official cyber security agencies:</p>
+       <ul class="space-y-2 text-slate-700">
+        <li class="flex gap-3"><span class="text-blue-600 font-bold flex-shrink-0">→</span> <span><strong>CERT-In</strong> – Incident response &amp; advisories</span></li>
+        <li class="flex gap-3"><span class="text-blue-600 font-bold flex-shrink-0">→</span> <span><strong>MeitY</strong> – Policy &amp; digital governance</span></li>
+        <li class="flex gap-3"><span class="text-blue-600 font-bold flex-shrink-0">→</span> <span><strong>Cyber Swachhta Kendra</strong> – Malware cleanup</span></li>
+        <li class="flex gap-3"><span class="text-blue-600 font-bold flex-shrink-0">→</span> <span><strong>Cyber Crime Portal</strong> – Official reporting</span></li>
+       </ul>
+      </div>
+     </div>
+     <div class="mt-12 p-6 bg-blue-50 border-l-4 border-blue-600 rounded-lg">
+      <p class="text-sm text-slate-700 leading-relaxed"><strong>Academic Prototype Disclaimer:</strong> This website is an academic prototype inspired by India's national cyber awareness efforts and government cyber security initiatives. It demonstrates best practices in digital safety communication and is designed to illustrate how public awareness portals can effectively reach and educate citizens on cyber hygiene.</p>
+     </div>
+    </div>
+   </section><!-- Call to Action -->
+   <section class="py-20 px-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+    <div class="max-w-4xl mx-auto text-center">
+     <h2 class="text-4xl font-bold mb-6">Ready to Secure Your Digital Life?</h2>
+     <p class="text-lg text-blue-100 mb-8">Explore comprehensive guides, take our assessment, and learn how to protect yourself and your family from cyber threats.</p>
+     <div class="flex flex-col sm:flex-row gap-4 justify-center"><a href="/learn.html" class="px-8 py-4 bg-white text-blue-600 font-bold rounded-xl hover:bg-blue-50 transition interactive-btn inline-block"> Explore Learning Hub → </a> <a href="/assessment.html" class="px-8 py-4 border-2 border-white text-white font-bold rounded-xl hover:bg-blue-500 transition interactive-btn inline-block"> Take Self-Assessment </a>
+     </div>
+    </div>
+   </section>
+  </div><!-- Footer -->
+  <footer class="bg-slate-900 text-white py-16 px-4">
+   <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-4 gap-12 mb-12">
+     <div>
+      <div class="flex items-center gap-2 mb-4">
+       <div class="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+       </div>
+       <h4 class="font-bold">Cyber Hygiene Initiative</h4>
+      </div>
+      <p class="text-slate-400 text-sm">Digital Safety for India</p>
+     </div>
+     <div>
+      <h4 class="font-bold mb-4 text-lg">Quick Links</h4>
+      <ul class="space-y-2 text-sm text-slate-400">
+       <li><a href="/" class="hover:text-white transition">Home</a></li>
+       <li><a href="/learn.html" class="hover:text-white transition">Learning Hub</a></li>
+       <li><a href="/assessment.html" class="hover:text-white transition">Self-Assessment</a></li>
+       <li><a href="/report.html" class="hover:text-white transition">Report Incident</a></li>
+       <li><a href="/resources.html" class="hover:text-white transition">Resources</a></li>
+      </ul>
+     </div>
+     <div>
+      <h4 class="font-bold mb-4 text-lg">Government Partners</h4>
+      <ul class="space-y-2 text-sm text-slate-400">
+       <li><a href="https://www.cert-in.org.in/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">CERT-In</a></li>
+       <li><a href="https://www.cyberswachhtakendra.gov.in/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">Cyber Swachhta Kendra</a></li>
+       <li><a href="https://cybervolunteer.mha.gov.in/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">Cyber Crime Portal</a></li>
+       <li><a href="https://www.meity.gov.in/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">MeitY</a></li>
+      </ul>
+     </div>
+     <div>
+      <h4 class="font-bold mb-4 text-lg">Contact &amp; Legal</h4>
+      <ul class="space-y-2 text-sm text-slate-400">
+       <li>📧 <a href="mailto:khrisshkhangembamdsk@gmail.com" class="hover:text-white transition">khrisshkhangembamdsk@gmail.com</a></li>
+       <li>☎️ Helpline: <strong>1930</strong></li>
+       <li class="mt-4"><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+       <li><a href="#" class="hover:text-white transition">Terms of Use</a></li>
+      </ul>
+     </div>
+    </div>
+    <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-400">
+     <p>© 2026 Cyber Hygiene Initiative (Academic Prototype)</p>
+     <div class="flex gap-6 mt-4 md:mt-0 text-xs"><span>Made in India 🇮🇳</span> <span>•</span> <span>For All Digital Citizens</span>
+     </div>
+    </div>
+   </div>
+  </footer>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cfd6265f47e338a',t:'MTc3MTQxNjIzOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+  </html>
